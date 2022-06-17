@@ -8,8 +8,8 @@ name: Autotag
 on:
   push:
     branches: [ "main" ]
-  steps:
-    tag:
+jobs:
+  tag:
       runs-on: ubuntu-latest
       steps:
       - name: Checkout
